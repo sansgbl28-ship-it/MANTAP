@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kumpulan Video Viral</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #111;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px 20px 50px;
+    text-align: center;
+}
+
+/* FOTO / LOGO */
+.profile {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+
+/* JUDUL */
+h1 {
+    font-size: 42px;
+    line-height: 1.15;
+    margin: 10px 0 45px;
+    font-weight: 800;
+}
+
+/* VIDEO PLAYER */
+.video-player {
+    display: none;
+    width: 100%;
+    max-height: 500px;
+    margin: 0 auto 15px;
+    border-radius: 12px;
+    background: #000;
+}
+
+/* STATUS */
+.status {
+    display: none;
+    margin-bottom: 25px;
+    font-size: 15px;
+    color: #666;
+}
+
+/* DAFTAR VIDEO */
+.video-list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+/* TOMBOL VIDEO */
+.video-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #28638f;
+    font-size: 27px;
+    font-weight: 500;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* ICON PLAY */
+.play {
+    width: 62px;
+    height: 62px;
+    min-width: 62px;
+    background: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.play::before {
+    content: "";
+    margin-left: 5px;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+    border-left: 17px solid white;
+}
+
+.video-button:hover {
+    opacity: 0.8;
+}
+
+/* MOBILE */
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .video-button {
+        font-size: 23px;
+    }
+
+    .play {
+        width: 58px;
+        height: 58px;
+        min-width: 58px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================================= -->
+    <!-- FOTO / LOGO -->
+    <!-- ================================= -->
+
+    <img
+        src="https://i.imgur.com/XXXXXXX.jpg"
+        class="profile"
+        alt="Video Viral"
+    >
+
+
+    <!-- ================================= -->
+    <!-- JUDUL -->
+    <!-- ================================= -->
+
+    <h1>
+        KUMPULAN VIDEO<br>
+        VIRAL
+    </h1>
+
+
+    <!-- ================================= -->
+    <!-- VIDEO PLAYER -->
+    <!-- ================================= -->
+
+    <video
+        id="videoPlayer"
+        class="video-player"
+        controls
+        playsinline
+        preload="metadata">
+    </video>
+
+
+    <!-- STATUS -->
+
+    <div id="status" class="status">
+        Video sedang diputar...
+    </div>
+
+
+    <!-- ================================= -->
+    <!-- DAFTAR VIDEO -->
+    <!-- ================================= -->
+
+    <div class="video-list">
+
+
+        <!-- =============================== -->
+        <!-- VIDEO 01 -->
+        <!-- =============================== -->
+
+        <div>
+            <a
+                href="#"
+                class="video-button"
+                onclick="playVideo(
+                    'https://cdn2.videy.co/UBX0ULqN1.mp4',
+                    'https://www.effectivecpmnetwork.com/jajsmmts?key=3379e30611a4277cdd49864562b580a3'
+                ); return false;"
+            >
+
+                <span class="play"></span>
+
+                Video Viral 01
+
+            </a>
+        </div>
+
+
+        <!-- =============================== -->
+        <!-- VIDEO 02 -->
+        <!-- =============================== -->
+
+        <div>
+            <a
+                href="#"
+                class="video-button"
+                onclick="playVideo(
+                    'https://cdn2.videy.co/UBX0ULqN1.mp4',
+                    'https://www.effectivecpmnetwork.com/jajsmmts?key=3379e30611a4277cdd49864562b580a3'
+                ); return false;"
+            >
+
+                <span class="play"></span>
+
+                Video Viral 02
+
+            </a>
+        </div>
+
+
+        <!-- =============================== -->
+        <!-- VIDEO 03 -->
+        <!-- =============================== -->
+
+        <div>
+            <a
+                href="#"
+                class="video-button"
+                onclick="playVideo(
+                    'https://cdn2.videy.co/UBX0ULqN1.mp4',
+                    'https://www.effectivecpmnetwork.com/jajsmmts?key=3379e30611a4277cdd49864562b580a3'
+                ); return false;"
+            >
+
+                <span class="play"></span>
+
+                Video Viral 03
+
+            </a>
+        </div>
+
+
+        <!-- =============================== -->
+        <!-- VIDEO 04 -->
+        <!-- =============================== -->
+
+        <div>
+            <a
+                href="#"
+                class="video-button"
+                onclick="playVideo(
+                    'https://cdn2.videy.co/UBX0ULqN1.mp4',
+                    'https://www.effectivecpmnetwork.com/jajsmmts?key=3379e30611a4277cdd49864562b580a3'
+                ); return false;"
+            >
+
+                <span class="play"></span>
+
+                Video Viral 04
+
+            </a>
+        </div>
+
+
+        <!-- =============================== -->
+        <!-- VIDEO 05 -->
+        <!-- =============================== -->
+
+        <div>
+            <a
+                href="#"
+                class="video-button"
+                onclick="playVideo(
+                    'https://cdn2.videy.co/UBX0ULqN1.mp4',
+                    'https://www.effectivecpmnetwork.com/jajsmmts?key=3379e30611a4277cdd49864562b580a3'
+                ); return false;"
+            >
+
+                <span class="play"></span>
+
+                Video Viral 05
+
+            </a>
+        </div>
+
+
+        <!-- =============================== -->
+        <!-- VIDEO 06 -->
+        <!-- =============================== -->
+
+        <div>
+            <a
+                href="#"
+                class="video-button"
+                onclick="playVideo(
+                    'https://cdn2.videy.co/UBX0ULqN1.mp4',
+                    'https://www.effectivecpmnetwork.com/jajsmmts?key=3379e30611a4277cdd49864562b580a3'
+                ); return false;"
+            >
+
+                <span class="play"></span>
+
+                Video Viral 06
+
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ========================================= -->
+<!-- POPUNDER SCRIPT -->
+<!-- ========================================= -->
+
+<script src="https://pl29581027.effectivecpmnetwork.com/4d/cc/6c/4dcc6c0e5e64226e4cb432f2f8e2c09e.js"></script>
+
+
+<script>
+
+let redirectTimer = null;
+let currentVideo = null;
+
+
+/* ============================================
+   PLAY VIDEO
+   ============================================ */
+
+function playVideo(videoUrl, directLink) {
+
+    const player = document.getElementById("videoPlayer");
+    const status = document.getElementById("status");
+
+
+    /* Hentikan timer sebelumnya */
+
+    if (redirectTimer) {
+        clearTimeout(redirectTimer);
+        redirectTimer = null;
+    }
+
+
+    /* Simpan video aktif */
+
+    currentVideo = player;
+
+
+    /* Simpan direct link */
+
+    player.dataset.directLink = directLink;
+
+
+    /* Masukkan video */
+
+    player.src = videoUrl;
+
+
+    /* Tampilkan video */
+
+    player.style.display = "block";
+
+
+    /* Tampilkan status */
+
+    status.style.display = "block";
+    status.innerHTML = "Memuat video...";
+
+
+    /* Load video */
+
+    player.load();
+
+
+    /* Scroll ke video */
+
+    setTimeout(function() {
+
+        player.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+
+    }, 100);
+
+
+    /*
+     * Coba memutar video.
+     */
+
+    player.play().then(function() {
+
+        /*
+         * Video berhasil mulai.
+         * Sekarang baru mulai timer 15 detik.
+         */
+
+        start15SecondTimer(
+            player,
+            directLink,
+            status
+        );
+
+    }).catch(function() {
+
+        /*
+         * Autoplay diblokir browser.
+         * Timer belum dimulai.
+         */
+
+        status.innerHTML =
+            "Tekan tombol ▶ pada video untuk mulai.";
+
+    });
+}
+
+
+/* ============================================
+   TIMER 15 DETIK
+   ============================================ */
+
+function start15SecondTimer(
+    player,
+    directLink,
+    status
+) {
+
+    /* Hentikan timer lama */
+
+    if (redirectTimer) {
+        clearTimeout(redirectTimer);
+    }
+
+
+    status.innerHTML =
+        "Video sedang diputar...";
+
+
+    /*
+     * Tunggu 15 detik
+     */
+
+    redirectTimer = setTimeout(function() {
+
+        /*
+         * Pastikan video masih aktif
+         */
+
+        if (currentVideo !== player) {
+            return;
+        }
+
+
+        /* Hentikan video */
+
+        player.pause();
+
+
+        /* Ubah status */
+
+        status.innerHTML =
+            "Mengalihkan...";
+
+
+        /*
+         * REDIRECT DIRECT LINK
+         *
+         * Redirect baru terjadi
+         * setelah 15 detik.
+         */
+
+        window.location.href = directLink;
+
+
+    }, 15000);
+}
+
+
+/* ============================================
+   JIKA AUTOPLAY DIBLOKIR
+   ============================================ */
+
+document.getElementById("videoPlayer").addEventListener(
+    "play",
+    function() {
+
+        const player = this;
+
+        /*
+         * Kalau timer sudah berjalan,
+         * jangan membuat timer kedua.
+         */
+
+        if (redirectTimer) {
+            return;
+        }
+
+
+        /*
+         * Kalau user menekan tombol Play
+         * secara manual, mulai timer.
+         */
+
+        if (player.dataset.directLink) {
+
+            start15SecondTimer(
+                player,
+                player.dataset.directLink,
+                document.getElementById("status")
+            );
+
+        }
+
+    }
+);
+
+</script>
+
+</body>
+</html>
